@@ -1,0 +1,501 @@
+[{
+    "id": 1,
+    "name": "Brolga crane",
+    "scientific_name": "Grus rubicundus",
+    "gender": "Polygender"
+  }, {
+    "id": 2,
+    "name": "Capuchin, black-capped",
+    "scientific_name": "Cebus apella",
+    "gender": "Polygender"
+  }, {
+    "id": 3,
+    "name": "African buffalo",
+    "scientific_name": "Snycerus caffer",
+    "gender": "Polygender"
+  }, {
+    "id": 4,
+    "name": "Galapagos tortoise",
+    "scientific_name": "Geochelone elephantopus",
+    "gender": "Genderqueer"
+  }, {
+    "id": 5,
+    "name": "Ibis, glossy",
+    "scientific_name": "Plegadis falcinellus",
+    "gender": "Genderqueer"
+  }, {
+    "id": 6,
+    "name": "Tamandua, southern",
+    "scientific_name": "Tamandua tetradactyla",
+    "gender": "Polygender"
+  }, {
+    "id": 7,
+    "name": "Dove, mourning collared",
+    "scientific_name": "Streptopelia decipiens",
+    "gender": "Agender"
+  }, {
+    "id": 8,
+    "name": "Hawk, galapagos",
+    "scientific_name": "Buteo galapagoensis",
+    "gender": "Non-binary"
+  }, {
+    "id": 9,
+    "name": "Zorro, azara's",
+    "scientific_name": "Pseudalopex gymnocercus",
+    "gender": "Non-binary"
+  }, {
+    "id": 10,
+    "name": "Dove, galapagos",
+    "scientific_name": "Zenaida galapagoensis",
+    "gender": "Agender"
+  }, {
+    "id": 11,
+    "name": "White-browed sparrow weaver",
+    "scientific_name": "Plocepasser mahali",
+    "gender": "Male"
+  }, {
+    "id": 12,
+    "name": "Manatee",
+    "scientific_name": "Trichechus inunguis",
+    "gender": "Male"
+  }, {
+    "id": 13,
+    "name": "Brocket, brown",
+    "scientific_name": "Mazama gouazoubira",
+    "gender": "Male"
+  }, {
+    "id": 14,
+    "name": "Common zebra",
+    "scientific_name": "Equus burchelli",
+    "gender": "Male"
+  }, {
+    "id": 15,
+    "name": "Ostrich",
+    "scientific_name": "Struthio camelus",
+    "gender": "Genderqueer"
+  }, {
+    "id": 16,
+    "name": "Lechwe, kafue flats",
+    "scientific_name": "Kobus leche robertsi",
+    "gender": "Genderqueer"
+  }, {
+    "id": 17,
+    "name": "White-browed owl",
+    "scientific_name": "Ninox superciliaris",
+    "gender": "Male"
+  }, {
+    "id": 18,
+    "name": "White-winged tern",
+    "scientific_name": "Chlidonias leucopterus",
+    "gender": "Non-binary"
+  }, {
+    "id": 19,
+    "name": "European red squirrel",
+    "scientific_name": "Sciurus vulgaris",
+    "gender": "Non-binary"
+  }, {
+    "id": 20,
+    "name": "Baleen whale",
+    "scientific_name": "Eubalaena australis",
+    "gender": "Genderfluid"
+  }, {
+    "id": 21,
+    "name": "Large-eared bushbaby",
+    "scientific_name": "Galago crassicaudataus",
+    "gender": "Bigender"
+  }, {
+    "id": 22,
+    "name": "Grey lourie",
+    "scientific_name": "Lorythaixoides concolor",
+    "gender": "Genderqueer"
+  }, {
+    "id": 23,
+    "name": "Bleeding heart monkey",
+    "scientific_name": "Theropithecus gelada",
+    "gender": "Polygender"
+  }, {
+    "id": 24,
+    "name": "Pelican, great white",
+    "scientific_name": "Pelecans onocratalus",
+    "gender": "Female"
+  }, {
+    "id": 25,
+    "name": "Squirrel, malabar",
+    "scientific_name": "Ratufa indica",
+    "gender": "Male"
+  }, {
+    "id": 26,
+    "name": "Blue peacock",
+    "scientific_name": "Pavo cristatus",
+    "gender": "Male"
+  }, {
+    "id": 27,
+    "name": "Seal, northern fur",
+    "scientific_name": "Callorhinus ursinus",
+    "gender": "Non-binary"
+  }, {
+    "id": 28,
+    "name": "Possum, pygmy",
+    "scientific_name": "Acrobates pygmaeus",
+    "gender": "Male"
+  }, {
+    "id": 29,
+    "name": "Camel, dromedary",
+    "scientific_name": "Camelus dromedarius",
+    "gender": "Male"
+  }, {
+    "id": 30,
+    "name": "Coqui partridge",
+    "scientific_name": "Francolinus coqui",
+    "gender": "Male"
+  }, {
+    "id": 31,
+    "name": "Tsessebe",
+    "scientific_name": "Damaliscus lunatus",
+    "gender": "Female"
+  }, {
+    "id": 32,
+    "name": "Bushbaby, large-eared",
+    "scientific_name": "Galago crassicaudataus",
+    "gender": "Non-binary"
+  }, {
+    "id": 33,
+    "name": "Chilean flamingo",
+    "scientific_name": "Phoenicopterus chilensis",
+    "gender": "Female"
+  }, {
+    "id": 34,
+    "name": "Common long-nosed armadillo",
+    "scientific_name": "Dasypus novemcinctus",
+    "gender": "Non-binary"
+  }, {
+    "id": 35,
+    "name": "Baboon, gelada",
+    "scientific_name": "Theropithecus gelada",
+    "gender": "Female"
+  }, {
+    "id": 36,
+    "name": "Square-lipped rhinoceros",
+    "scientific_name": "Ceratotherium simum",
+    "gender": "Non-binary"
+  }, {
+    "id": 37,
+    "name": "Cottonmouth",
+    "scientific_name": "Agkistrodon piscivorus",
+    "gender": "Male"
+  }, {
+    "id": 38,
+    "name": "Penguin, galapagos",
+    "scientific_name": "Spheniscus mendiculus",
+    "gender": "Genderfluid"
+  }, {
+    "id": 39,
+    "name": "Adouri (unidentified)",
+    "scientific_name": "unavailable",
+    "gender": "Bigender"
+  }, {
+    "id": 40,
+    "name": "Thrasher, curve-billed",
+    "scientific_name": "Toxostoma curvirostre",
+    "gender": "Polygender"
+  }, {
+    "id": 41,
+    "name": "Marmot, yellow-bellied",
+    "scientific_name": "Marmota flaviventris",
+    "gender": "Genderqueer"
+  }, {
+    "id": 42,
+    "name": "Two-banded monitor",
+    "scientific_name": "Varanus salvator",
+    "gender": "Agender"
+  }, {
+    "id": 43,
+    "name": "Possum, ring-tailed",
+    "scientific_name": "Pseudocheirus peregrinus",
+    "gender": "Bigender"
+  }, {
+    "id": 44,
+    "name": "Eland, common",
+    "scientific_name": "Taurotagus oryx",
+    "gender": "Bigender"
+  }, {
+    "id": 45,
+    "name": "Cockatoo, slender-billed",
+    "scientific_name": "Cacatua tenuirostris",
+    "gender": "Female"
+  }, {
+    "id": 46,
+    "name": "Porcupine, tree",
+    "scientific_name": "Coendou prehensilis",
+    "gender": "Female"
+  }, {
+    "id": 47,
+    "name": "Mourning collared dove",
+    "scientific_name": "Streptopelia decipiens",
+    "gender": "Male"
+  }, {
+    "id": 48,
+    "name": "Opossum, american virginia",
+    "scientific_name": "Didelphis virginiana",
+    "gender": "Bigender"
+  }, {
+    "id": 49,
+    "name": "Loris, slender",
+    "scientific_name": "Loris tardigratus",
+    "gender": "Genderqueer"
+  }, {
+    "id": 50,
+    "name": "Fox, north american red",
+    "scientific_name": "Vulpes vulpes",
+    "gender": "Agender"
+  }, {
+    "id": 51,
+    "name": "Amazon parrot (unidentified)",
+    "scientific_name": "Amazona sp.",
+    "gender": "Male"
+  }, {
+    "id": 52,
+    "name": "Musk ox",
+    "scientific_name": "Ovibos moschatus",
+    "gender": "Polygender"
+  }, {
+    "id": 53,
+    "name": "Anteater, australian spiny",
+    "scientific_name": "Tachyglossus aculeatus",
+    "gender": "Polygender"
+  }, {
+    "id": 54,
+    "name": "Scaly-breasted lorikeet",
+    "scientific_name": "Trichoglossus chlorolepidotus",
+    "gender": "Non-binary"
+  }, {
+    "id": 55,
+    "name": "Coatimundi, ring-tailed",
+    "scientific_name": "Nasua nasua",
+    "gender": "Male"
+  }, {
+    "id": 56,
+    "name": "Golden jackal",
+    "scientific_name": "Canis aureus",
+    "gender": "Non-binary"
+  }, {
+    "id": 57,
+    "name": "Common melba finch",
+    "scientific_name": "Pytilia melba",
+    "gender": "Agender"
+  }, {
+    "id": 58,
+    "name": "Heron, striated",
+    "scientific_name": "Butorides striatus",
+    "gender": "Bigender"
+  }, {
+    "id": 59,
+    "name": "Blue catfish",
+    "scientific_name": "Ictalurus furcatus",
+    "gender": "Genderqueer"
+  }, {
+    "id": 60,
+    "name": "Pheasant, common",
+    "scientific_name": "Phasianus colchicus",
+    "gender": "Female"
+  }, {
+    "id": 61,
+    "name": "Argalis",
+    "scientific_name": "Ovis ammon",
+    "gender": "Agender"
+  }, {
+    "id": 62,
+    "name": "Egret, great",
+    "scientific_name": "Casmerodius albus",
+    "gender": "Genderfluid"
+  }, {
+    "id": 63,
+    "name": "Marmot, hoary",
+    "scientific_name": "Marmota caligata",
+    "gender": "Male"
+  }, {
+    "id": 64,
+    "name": "Shelduck, european",
+    "scientific_name": "Tadorna tadorna",
+    "gender": "Polygender"
+  }, {
+    "id": 65,
+    "name": "Gnu, brindled",
+    "scientific_name": "Connochaetus taurinus",
+    "gender": "Genderqueer"
+  }, {
+    "id": 66,
+    "name": "Macaque, bonnet",
+    "scientific_name": "Macaca radiata",
+    "gender": "Non-binary"
+  }, {
+    "id": 67,
+    "name": "Boa, emerald green tree",
+    "scientific_name": "Boa caninus",
+    "gender": "Non-binary"
+  }, {
+    "id": 68,
+    "name": "Bear, polar",
+    "scientific_name": "Ursus maritimus",
+    "gender": "Genderfluid"
+  }, {
+    "id": 69,
+    "name": "White-winged tern",
+    "scientific_name": "Chlidonias leucopterus",
+    "gender": "Female"
+  }, {
+    "id": 70,
+    "name": "Monkey, rhesus",
+    "scientific_name": "Macaca mulatta",
+    "gender": "Polygender"
+  }, {
+    "id": 71,
+    "name": "Yellow-brown sungazer",
+    "scientific_name": "Cordylus giganteus",
+    "gender": "Bigender"
+  }, {
+    "id": 72,
+    "name": "Hyrax",
+    "scientific_name": "Dendrohyrax brucel",
+    "gender": "Bigender"
+  }, {
+    "id": 73,
+    "name": "Woodchuck",
+    "scientific_name": "Marmota monax",
+    "gender": "Female"
+  }, {
+    "id": 74,
+    "name": "Small Indian mongoose",
+    "scientific_name": "Herpestes javanicus",
+    "gender": "Non-binary"
+  }, {
+    "id": 75,
+    "name": "Baleen whale",
+    "scientific_name": "Eubalaena australis",
+    "gender": "Agender"
+  }, {
+    "id": 76,
+    "name": "Black-capped capuchin",
+    "scientific_name": "Cebus apella",
+    "gender": "Non-binary"
+  }, {
+    "id": 77,
+    "name": "Lion, african",
+    "scientific_name": "Panthera leo",
+    "gender": "Non-binary"
+  }, {
+    "id": 78,
+    "name": "Eleven-banded armadillo (unidentified)",
+    "scientific_name": "Cabassous sp.",
+    "gender": "Male"
+  }, {
+    "id": 79,
+    "name": "Blue waxbill",
+    "scientific_name": "Uraeginthus angolensis",
+    "gender": "Male"
+  }, {
+    "id": 80,
+    "name": "Deer, savannah",
+    "scientific_name": "Mazama gouazoubira",
+    "gender": "Polygender"
+  }, {
+    "id": 81,
+    "name": "Blue and gold macaw",
+    "scientific_name": "Ara ararauna",
+    "gender": "Polygender"
+  }, {
+    "id": 82,
+    "name": "Echidna, short-beaked",
+    "scientific_name": "Tachyglossus aculeatus",
+    "gender": "Non-binary"
+  }, {
+    "id": 83,
+    "name": "Coyote",
+    "scientific_name": "Canis latrans",
+    "gender": "Genderfluid"
+  }, {
+    "id": 84,
+    "name": "Jackal, asiatic",
+    "scientific_name": "Canis aureus",
+    "gender": "Female"
+  }, {
+    "id": 85,
+    "name": "Thrasher, curve-billed",
+    "scientific_name": "Toxostoma curvirostre",
+    "gender": "Genderfluid"
+  }, {
+    "id": 86,
+    "name": "Australian spiny anteater",
+    "scientific_name": "Tachyglossus aculeatus",
+    "gender": "Bigender"
+  }, {
+    "id": 87,
+    "name": "Savanna baboon",
+    "scientific_name": "Papio cynocephalus",
+    "gender": "Polygender"
+  }, {
+    "id": 88,
+    "name": "Tiger cat",
+    "scientific_name": "Dasyurus maculatus",
+    "gender": "Genderfluid"
+  }, {
+    "id": 89,
+    "name": "Stork, openbill",
+    "scientific_name": "Anastomus oscitans",
+    "gender": "Genderqueer"
+  }, {
+    "id": 90,
+    "name": "Jaguar",
+    "scientific_name": "Panthera onca",
+    "gender": "Genderqueer"
+  }, {
+    "id": 91,
+    "name": "Goose, andean",
+    "scientific_name": "Chloephaga melanoptera",
+    "gender": "Non-binary"
+  }, {
+    "id": 92,
+    "name": "Viper, egyptian",
+    "scientific_name": "Naja haje",
+    "gender": "Bigender"
+  }, {
+    "id": 93,
+    "name": "Scottish highland cow",
+    "scientific_name": "Bos taurus",
+    "gender": "Male"
+  }, {
+    "id": 94,
+    "name": "Toucan, red-billed",
+    "scientific_name": "Ramphastos tucanus",
+    "gender": "Agender"
+  }, {
+    "id": 95,
+    "name": "Asian red fox",
+    "scientific_name": "Vulpes vulpes",
+    "gender": "Non-binary"
+  }, {
+    "id": 96,
+    "name": "Viper, egyptian",
+    "scientific_name": "Naja haje",
+    "gender": "Polygender"
+  }, {
+    "id": 97,
+    "name": "Red-breasted nuthatch",
+    "scientific_name": "Sitta canadensis",
+    "gender": "Polygender"
+  }, {
+    "id": 98,
+    "name": "Common green iguana",
+    "scientific_name": "Iguana iguana",
+    "gender": "Genderqueer"
+  }, {
+    "id": 99,
+    "name": "Flicker, field",
+    "scientific_name": "Colaptes campestroides",
+    "gender": "Genderfluid"
+  }, {
+    "id": 100,
+    "name": "Southern tamandua",
+    "scientific_name": "Tamandua tetradactyla",
+    "gender": "Male"
+  }]
