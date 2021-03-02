@@ -4,34 +4,46 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
-// const mongodb = require('mongoose')
+// const bodyParser=require('body-parser')
+const dotenv = require('dotenv')
+dotenv.config({path:'./config.env'})
+const DB =process.env.DATABASE.replace('<password>',process.env.DATABASE_PASSWORD)
 
-// mongodb.connect(
-//   'mongodb+srv://admin:admin123@biodata.vn31h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-//   {useNewUrlParser: true, 
-//   useUnifiedTopology: true}).then(connection =>{
-//     console.log("Koneksi Berhasil")
-// })
-var MongoClient = require('mongodb').MongoClient
+const mongodb = require('mongoose')
 
-MongoClient.connect('mongodb+srv://admin:admin123@biodata.vn31h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', function (err, db) {
-  if (err) throw err
-
-  db.db('biodata').collection('user').find().toArray(function (err, result) {
-    if (err) throw err
-
-    console.log(result)
-  })
+mongodb.connect(
+  DB,
+  {useNewUrlParser: true, 
+  useUnifiedTopology: true,
+  useFindAndModify:true}).then(connection =>{
+    console.log("Koneksi Berhasil")
 })
+// var MongoClient = require('mongodb').MongoClient
+
+// MongoClient.connect('mongodb+srv://admin:admin123@biodata.vn31h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', function (err, db) {
+//   if (err) throw err
+
+//   db.db('biodata').collection('user').find().toArray(function (err, result) {
+//     if (err) throw err
+
+//     console.log(result)
+//   })
+// })
+//body parser
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended:false}))
 
 app.use(logger('dev'));
 app.use(express.json());
