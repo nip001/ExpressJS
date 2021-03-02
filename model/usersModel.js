@@ -1,6 +1,11 @@
 const mongodb = require('mongoose')
 
 const modelUser = new mongodb.Schema({
+    email : {
+        type : String,
+        require :[true, "Masukan Email"],
+        unique : true
+    },
     first_name : {
         type : String,
         default: "wkkwkw"
@@ -9,10 +14,6 @@ const modelUser = new mongodb.Schema({
         type : String,
         default: "wkkwkw"
     },
-    email : {
-        type : String,
-        unique : true
-    },
     gender : {
         type : String
     }
@@ -20,6 +21,6 @@ const modelUser = new mongodb.Schema({
 
 // const dataSchema = new mongodb.Schema({})
 
-const Temp = mongodb.model('dataUsers',modelUser)
+const DataUser = mongodb.model('users',modelUser)
 
-module.exports= Temp;
+module.exports= DataUser;
