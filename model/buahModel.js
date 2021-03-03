@@ -18,6 +18,9 @@ const modelBuah = new mongodb.Schema({
     },
     rasaBuah:{
         type:String
+    },
+    gambarBuah:{
+        type:String
     }
 })
 

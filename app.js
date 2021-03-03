@@ -11,6 +11,25 @@ var buahRouter = require('./routes/buah')
 
 var app = express();
 
+//multer 
+const multer = require('multer');
+const fileStorage = multer.diskStorage({
+  destination: (req,file,cb) => {
+    cb(null,'images')
+  },
+  filename: (req,file,cb) =>{
+    cb(null,Date.now()+ '_'+ file.originalname)
+  }
+})
+
+const fileFilter  = (req,file,cb)=>{
+  if(file.mimetype ==='image/png' || file.mimetype ==='image/jpg' || file.mimetype ==='image/jpeg'){
+    cb(null,true)
+  }else {
+    cb(null,false)
+  }
+}
+
 // const bodyParser=require('body-parser')
 const dotenv = require('dotenv')
 dotenv.config({path:'./config.env'})
@@ -48,6 +67,12 @@ app.use((req, res, next) => {
 })
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({extended:false}))
+
+app.use('/images', express.static(path.join(__dirname,'images')))
+app.use(multer({
+  storage:fileStorage,
+  fileFilter:fileFilter
+}).single('gambarBuah'))
 
 app.use(logger('dev'));
 app.use(express.json());

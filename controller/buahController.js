@@ -1,15 +1,17 @@
 const DataBuah = require('../model/buahModel');
 
 exports.insertBuah = (req,res)=>{
-    let {warnaBuah,bentukBuah,namaBuah,hargaBuah,satuanJual,rasaBuah} = req.body
-    
+    let {warnaBuah,bentukBuah,namaBuah,hargaBuah,satuanJual,rasaBuah} = req.body;
+    let filePath = req.file.path
+
     let data = new DataBuah({
         warnaBuah:warnaBuah,
         bentukBuah:bentukBuah,
         namaBuah:namaBuah,
         hargaBuah:hargaBuah,
         satuanJual:satuanJual,
-        rasaBuah:rasaBuah
+        rasaBuah:rasaBuah,
+        gambarBuah:filePath,
     })
     data.save().then(doc => {
         res.status(200).json({
