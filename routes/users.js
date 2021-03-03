@@ -8,7 +8,7 @@ router.route('/')
       .post(userController.addUser)
       
 router.route('/:nama')
-      .get(userController.getUserById)
+      .get(userController.getUserByNama)
       .patch(userController.updateDataUser)
       .delete(userController.deleteDataUser)
 

@@ -10,7 +10,11 @@ exports.addUser = (req,res)=>{
         gender:gender
     })
     data.save().then(doc => {
-        res.status(200).send("Berhasil hore hore "+doc)
+        res.status(200).json({
+            message : "Berhasil hore",
+            timestamp : req.requestTime,
+            data:doc
+        })
     }).catch(err => {
         res.status(500).send("Gagal "+ err)
     })
@@ -28,10 +32,10 @@ exports.getAllUser = (req,res) =>{
     });
 }
 
-exports.getUserById = async(req,res)=>{
+exports.getUserByNama = async(req,res)=>{
     let nama = req.params.nama
     console.log(nama)
-    let hasil = await DataUser.find({first_name:nama});
+    let hasil = await DataUser.find({first_name:{$regex:nama,$options:'i'}});
     res.status(200).json({
         message : "Success",
         timestamp : req.requestTime,
@@ -41,7 +45,7 @@ exports.getUserById = async(req,res)=>{
 
 exports.updateDataUser = async(req,res)=>{
     let nama = req.params.nama
-    await DataUser.findOneAndUpdate({first_name:nama},req.body,(err, docs)=>{
+    await DataUser.findOneAndUpdate({first_name:{$regex:nama,$options:'i'}},req.body,(err, docs)=>{
         if(err || docs === null){
 
             res.status(400).json({
@@ -61,7 +65,7 @@ exports.updateDataUser = async(req,res)=>{
 
 exports.deleteDataUser = async(req,res)=>{
     let nama = req.params.nama
-    await DataUser.findOneAndDelete({first_name:nama},(err,docs)=>{
+    await DataUser.findOneAndDelete({first_name:{$regex:nama,$options:'i'}},(err,docs)=>{
         if(err){
             res.status(400).json(err)
         } else{
