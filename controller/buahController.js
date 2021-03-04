@@ -1,4 +1,6 @@
 const DataBuah = require('../model/buahModel');
+const fs = require('fs')
+const path= require('path');
 
 exports.insertBuah = (req,res)=>{
     let {warnaBuah,bentukBuah,namaBuah,hargaBuah,satuanJual,rasaBuah} = req.body;
@@ -75,11 +77,14 @@ exports.getDataBuahByHarga = (req,res)=>{
 
 exports.updateBuah = (req,res) =>{
     let rasa = req.params.rasa
-    DataBuah.updateOne({rasaBuah:rasa},req.body,(err,doc)=>{
+    DataBuah.findByIdAndUpdate(rasa,req,(err,doc)=>{
         if(!err){
+
+            // console.log(doc)
             res.status(200).json({
                 message:"Berhasil Update buah dengan rasa "+rasa,
                 timestamp : req.requestTime,
+                data:doc
             })
         } else{
             res.status(400).send("Gagal Update "+ err)
@@ -89,15 +94,30 @@ exports.updateBuah = (req,res) =>{
 
 exports.deleteBuah = (req,res)=>{
     let rasa = req.params.rasa
-    DataBuah.deleteMany({rasaBuah:rasa},(err,doc)=>{
+    DataBuah.findByIdAndDelete(rasa,(err,doc)=>{
         if(!err){
+            console.log(doc)
+            doc.gambarBuah.forEach((data)=>{
+                removeImage(data)
+            })
             res.status(200).json({
                 message:"Berhasil Delete buah dengan rasa "+rasa,
                 timestamp : req.requestTime,
+                data: doc,
             })
         }
         else{
             res.status(400).send("Gagal Delete "+ err)
         }
+    })
+}
+
+const removeImage= (filepath) => {
+    console.log('filepath : ' + filepath);
+    console.log('direktory name : '+ __dirname)
+    
+    filepath = path.join(__dirname, '../', filepath);
+    fs.unlink(filepath, err => {
+        console.log(err)
     })
 }

@@ -15,14 +15,18 @@ var app = express();
 const multer = require('multer');
 const fileStorage = multer.diskStorage({
   destination: (req,file,cb) => {
+    console.log("Log Destination: " + req)
     cb(null,'images')
   },
   filename: (req,file,cb) =>{
+    console.log("Log: " + req)
     cb(null,Date.now()+ '_'+ file.originalname)
   }
 })
 
 const fileFilter  = (req,file,cb)=>{
+
+  console.log("file: " + file)
   if(file.mimetype ==='image/png' || file.mimetype ==='image/jpg' || file.mimetype ==='image/jpeg'){
     cb(null,true)
   }else {
