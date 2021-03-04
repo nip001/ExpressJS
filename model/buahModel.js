@@ -20,7 +20,8 @@ const modelBuah = new mongodb.Schema({
         type:String
     },
     gambarBuah:{
-        type:String
+        type:Array,
+        default:[]
     }
 })
 

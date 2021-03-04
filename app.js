@@ -72,7 +72,7 @@ app.use('/images', express.static(path.join(__dirname,'images')))
 app.use(multer({
   storage:fileStorage,
   fileFilter:fileFilter
-}).single('gambarBuah'))
+}).array('gambarBuah',4))
 
 app.use(logger('dev'));
 app.use(express.json());

@@ -2,8 +2,10 @@ const DataBuah = require('../model/buahModel');
 
 exports.insertBuah = (req,res)=>{
     let {warnaBuah,bentukBuah,namaBuah,hargaBuah,satuanJual,rasaBuah} = req.body;
-    let filePath = req.file.path
-
+    let gambarBuahChelsea = []
+    req.files.forEach((data)=>{
+        gambarBuahChelsea.push(data.path)
+    })
     let data = new DataBuah({
         warnaBuah:warnaBuah,
         bentukBuah:bentukBuah,
@@ -11,8 +13,9 @@ exports.insertBuah = (req,res)=>{
         hargaBuah:hargaBuah,
         satuanJual:satuanJual,
         rasaBuah:rasaBuah,
-        gambarBuah:filePath,
+        gambarBuah:gambarBuahChelsea
     })
+  
     data.save().then(doc => {
         res.status(200).json({
             message : "Berhasil Insert Buah",
